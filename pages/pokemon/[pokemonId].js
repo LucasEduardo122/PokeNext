@@ -1,4 +1,4 @@
-import styles from '../../styles/Pokemon.module.css'
+import styles from '../../styles/pokemon.module.css'
 
 import Image from 'next/image'
 
