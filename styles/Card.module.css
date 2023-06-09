@@ -23,6 +23,17 @@
     justify-content: center;
     align-items: center;
   }
+
+  .id {
+    margin: 1em 0;
+    background-color: #e33d33;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .card .title {
     text-transform: capitalize;
@@ -30,6 +41,12 @@
     font-size: 1.4em;
   }
   
+  .title {
+    text-transform: capitalize;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+  }
+
   .card .btn {
     text-decoration: none;
     background-color: #fff;
@@ -38,6 +55,21 @@
     border-radius: 5px;
     font-weight: bold;
     transition: 0.4s;
+  }
+  
+  .btn {
+    text-decoration: none;
+    background-color: #fff;
+    color: #222;
+    padding: 0.7em 1.2em;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+  
+  .btn:hover {
+    background-color: #e33d33;
+    color: #fff;
   }
   
   .card .btn:hover {

@@ -10,8 +10,6 @@ export async function getStaticProps() {
 
     const data = await dados.json();
 
-    console.log(data.results);
-
     data.results.forEach((item, index) => {
       item.id = index + 1;
     });
@@ -39,7 +37,7 @@ export default function Home({pokemons}) {
       </div>
       <div className={styles.pokemon_container}>
         {pokemons.map((pokemon) => (
-          <Card key={pokemon.id} pokemon={pokemon} />
+          <Card key={pokemon.url.split("/")[6]} pokemon={pokemon} />
         ))}
       </div>
     </>
