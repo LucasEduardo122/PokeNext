@@ -1,6 +1,6 @@
 import Card from "../pages/components/Card";
 import Image from 'next/image'
-import styles from '../styles/home.module.css'
+import styles from './styles/home.module.css'
 
 export async function getStaticProps() {
     const maxPokemons = 251;
