@@ -10,6 +10,5 @@
         "use": "@vercel/static"
       }
     ],
-    "routes": [],
-    "files": ["styles/**/*"]
+    "routes": []
   }
