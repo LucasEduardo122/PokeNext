@@ -7,14 +7,14 @@ export default function Card({ pokemon }) {
   return (
     <div className={styles.card}>
       <Image
-        src={`https://nexus.traction.one/images/pokemon/pokemon/${pokemon.url.split("/")[6]}.png`}
+        src={`https://nexus.traction.one/images/pokemon/pokemon/${pokemon.url.split("/")[6] ?? 'undefined'}.png`}
         width="120"
         height="120"
         alt={pokemon.name}
       />
-      <p className={styles.id}>#{pokemon.url.split("/")[6]}</p>
+      <p className={styles.id}>#{pokemon.url.split("/")[6] ?? 'undefined'}</p>
       <h3 className={styles.title}>{pokemon.name}</h3>
-      <Link href={`/pokemon/${pokemon.url.split("/")[6]}`}>
+      <Link href={`/pokemon/${pokemon.url.split("/")[6] ?? undefined}`}>
         <a className={styles.btn}>Detalhes</a>
       </Link>
     </div>
